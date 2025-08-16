@@ -1,3 +1,4 @@
+@import 'hero';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,18 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
     font-family: inherit;
-    background: #fff;
-    color: #000;
 }
-h1 {
-    background-color: rgb(142, 112, 199);
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin:  0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+    @media (max-width:1024px) {
+        max-width: 90%;
+    }
 }
