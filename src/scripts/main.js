@@ -1,1 +1,1 @@
-console.log('hellow word')
+AOS.init();
